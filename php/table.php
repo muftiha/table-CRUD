@@ -25,14 +25,14 @@ include 'pagination.php';
         <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap">
 
             <div>
-                <h1>Makanan & Minuman</h1>
+                <h1>Famira Cafe</h1>
 
                 <figure>
                     <blockquote class="blockquote">
-                        <p>admin famira cafe</p>
+                        <p>Cafe Management System</p>
                     </blockquote>
                     <figcaption class="blockquote-footer">
-                        <cite title="Source Title">Personal Projects</cite>
+                        <cite title="Source Title">Developed by Famira</cite>
                     </figcaption>
                 </figure>
             </div>
@@ -65,7 +65,7 @@ include 'pagination.php';
                     <tr>
                         <th>No</th>
                         <th>Name</th>
-                        <th>Harga</th>
+                        <th>Price</th>
                         <th>Action</th>
                     </tr>
                 </thead>
