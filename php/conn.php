@@ -8,7 +8,7 @@ $db   = 'famira_db';
 $conn = mysqli_connect($host, $user, $pass, $db);
 
 if(!$conn){
-    die("Koneksi gagal: " . mysqli_error_connect());
+    die("Koneksi gagal: " . mysqli_connect_error());
 }
 
 ?>

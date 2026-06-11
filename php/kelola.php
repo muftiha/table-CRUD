@@ -31,6 +31,7 @@ if(isset($_GET['ubah'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../backend.css">
     <title>Document</title>
 </head>
 <body>
@@ -40,9 +41,9 @@ if(isset($_GET['ubah'])){
 
     <div class="container-fluid">
 
-        <a class="navbar-brand" href="#"> 
-            WELCOME
-        </a>
+        <a class="navbar-brand fw-bold" href="#"> 
+    ☕ FAMIRA CAFE ADMIN
+</a>
 
     </div>
 
@@ -50,7 +51,11 @@ if(isset($_GET['ubah'])){
 
 
 <!--  -->
-    <div class="container">
+    <div class="container bg-white p-4 rounded shadow" style="margin-top: 80px; width:800px; margin-bottom:155px">
+
+    <h2 class="mb-4">
+        🍜 Kelola Menu Cafe
+    </h2>
 
     <form method="POST" action="process.php">
 
@@ -91,7 +96,7 @@ if(isset($_GET['ubah'])){
                     if(isset($_GET['ubah'])){
 
                     ?>
-    <button type="submit" name="update" value="edit" class="btn btn-primary"><i class="bi bi-envelope-plus"></i>Simpan Perubahan</button>
+    <button type="submit" name="update" value="edit" class="btn btn-success"><i class="bi bi-envelope-plus"></i>Simpan Perubahan</button>
 
       <?php
 
@@ -99,7 +104,7 @@ if(isset($_GET['ubah'])){
 
                     ?>
 
-    <button type="submit" name="simpan" value="add" class="btn btn-primary">Tambahkan</button>
+    <button type="submit" name="simpan" value="add" class="btn btn-outline-success">Tambahkan</button>
 
                          <?php
 

@@ -1,3 +1,35 @@
 body{
-   background: linear-gradient(to bottom, #ffeaea,#eeaf28);
+   background: linear-gradient(to bottom, #9CB080,#D6C0B3);
+}
+
+.container{
+    margin-top: -60px;
+}
+
+.shadow{
+    box-shadow: 0 1px 15px rgba(0,0,0,0.15) !important;
+}
+
+.rounded{
+    border-radius: 20px !important;
+}
+
+.navbar{
+    background-color: #6F4E37 !important;
+}
+
+.navbar-brand{
+    color: white !important;
+}
+
+.container{
+    border-radius: 20px;
+}
+
+.form-control{
+    border-radius: 10px;
+}
+
+.btn{
+    border-radius: 10px;
 }
