@@ -61,14 +61,6 @@ if(isset($_GET['ubah'])){
 
     <input type="hidden" value="<?php echo $id_database; ?>" name="id" >
 
-    <!-- No -->
-
-    <div class="mb-3 row">
-        <label for="no" class="col-sm-2 col-form-label">No</label>
-            <div class="col-sm-10">
-        <input type="text" name="id" class="form-control" value = "<?php echo $id_database; ?>" readonly>
-            </div>
-    </div>
 
 
     <div class="mb-3 row">
