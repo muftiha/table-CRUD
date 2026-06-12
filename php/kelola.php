@@ -13,12 +13,11 @@ if(isset($_GET['ubah'])){
     $sql = mysqli_query($conn, $query);
 
     $result = mysqli_fetch_assoc($sql);
-
     $id_database = $result['id'];
     $nama = $result['nama']; 
     $harga = $result['harga']; 
 }
-
+    
 
 ?>
 
@@ -42,15 +41,13 @@ if(isset($_GET['ubah'])){
     <div class="container-fluid">
 
         <a class="navbar-brand fw-bold" href="#"> 
-    ☕ FAMIRA CAFE ADMIN
-</a>
+            ☕ FAMIRA CAFE ADMIN
+        </a>
 
     </div>
 
-</nav>
+    </nav>
 
-
-<!--  -->
     <div class="container bg-white p-4 rounded shadow" style="margin-top: 80px; width:800px; margin-bottom:155px">
 
     <h2 class="mb-4">
@@ -60,8 +57,6 @@ if(isset($_GET['ubah'])){
     <form method="POST" action="process.php">
 
     <input type="hidden" value="<?php echo $id_database; ?>" name="id" >
-
-
 
     <div class="mb-3 row">
         <label for="no" class="col-sm-2 col-form-label">Nama</label>
@@ -81,30 +76,32 @@ if(isset($_GET['ubah'])){
 
      <div class="mb-3 row mt-5">
 
-                    <div class="col">
+        <div class="col">
 
-                    <?php
+            <?php
 
-                    if(isset($_GET['ubah'])){
+                if(isset($_GET['ubah'])){
 
-                    ?>
-    <button type="submit" name="update" value="edit" class="btn btn-success"><i class="bi bi-envelope-plus"></i>Simpan Perubahan</button>
+            ?>
 
-      <?php
+    <button type="submit" name="update" value="edit" class="btn btn-success">
+        <i class="bi bi-envelope-plus"></i>Simpan Perubahan</button>
 
-                        }else{
+            <?php
 
-                    ?>
+                }else{
+
+            ?>
 
     <button type="submit" name="simpan" value="add" class="btn btn-outline-success">Tambahkan</button>
 
-                         <?php
+            <?php
 
-                        }
+                }
 
-                    ?>
+            ?>
 
-                        <a href="table.php" class="btn btn-danger">Batal</a>
+            <a href="table.php" class="btn btn-danger">Batal</a>
 
 
     </div>

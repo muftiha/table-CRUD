@@ -2,8 +2,7 @@
 
 include 'conn.php';
 
-
-//pagi
+//pagination
 $batas = 3;
 
 $halaman = isset($_GET['halaman']) ? $_GET['halaman'] : 1;
@@ -30,3 +29,4 @@ $total_data = mysqli_num_rows($query_total);
 $total_halaman = ceil($total_data / $batas);
 
 ?>
+

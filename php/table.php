@@ -16,7 +16,12 @@ include 'pagination.php';
 <body>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#607456" fill-opacity="1" d="M0,128L26.7,154.7C53.3,181,107,235,160,224C213.3,213,267,139,320,117.3C373.3,96,427,128,480,128C533.3,128,587,96,640,85.3C693.3,75,747,85,800,106.7C853.3,128,907,160,960,165.3C1013.3,171,1067,149,1120,133.3C1173.3,117,1227,107,1280,112C1333.3,117,1387,139,1413,149.3L1440,160L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
+        <path fill="#607456" fill-opacity="1" d="M0,128L26.7,154.7C53.3,181,107,235,160,224C213.3,213,
+        267,139,320,117.3C373.3,96,427,128,480,128C533.3,128,587,96,640,85.3C693.3,75,747,85,800,
+        106.7C853.3,128,907,160,960,165.3C1013.3,171,1067,149,1120,133.3C1173.3,117,1227,107,1280,112C1333.3,
+        117,1387,139,1413,149.3L1440,160L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7
+        ,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,
+       D 0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"></path>
     </svg>
 
     <div class="container bg-white p-4 rounded shadow"
@@ -37,21 +42,20 @@ include 'pagination.php';
                 </figure>
             </div>
 
-           <form method="GET" class="d-flex gap-2" style="max-width: 350px;">
-    <input
-        type="text"
-        name="cari"
-        class="form-control"
-        placeholder="Cari nama"
-        value="<?php echo isset($_GET['cari']) ? $_GET['cari'] : ''; ?>">
+    <form method="GET" class="d-flex gap-2" style="max-width: 350px;">
+        <input
+            type="text"
+            name="cari"
+            class="form-control"
+            placeholder="Cari nama"
+            value="<?php echo isset($_GET['cari']) ? $_GET['cari'] : ''; ?>">
 
-    <button type="submit" class="btn btn-success text-nowrap" style=" height: 40px">
-        Cari
-    </button>
+        <button type="submit" class="btn btn-success text-nowrap" style=" height: 40px">
+            Cari
+        </button>
 
-    <a href="table.php" class="btn btn-secondary text-nowrap" style=" height: 40px"> Refresh <i class="bi bi-arrow-clockwise"></i> 
-    </a>
-</form>
+        <a href="table.php" class="btn btn-secondary text-nowrap" style=" height: 40px"> Refresh <i class="bi bi-arrow-clockwise"></i> </a>
+    </form>
 
         </div>
 
